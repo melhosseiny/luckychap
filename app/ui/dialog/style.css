@@ -1,0 +1,49 @@
+dialog {
+  font-family: var(--primary-font-family);
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.12);
+  min-width: 280px;
+  max-width: 560px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+}
+
+dialog header {
+  background: none;
+  border-right: 0;
+  padding: 0.5em;
+}
+
+dialog form {
+  padding: 0.5em;
+}
+
+dialog footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #fff;
+  padding: 0.5em;
+}
+
+dialog button {
+  background-color: rgba(0,0,0,0.12);
+  border: none;
+  &+ button {
+    margin-left: 0.25em;
+  }
+  &:hover {
+    background-color: var(--text-decoration-color);
+    color: #fff;
+  }
+}
+
+dialog + :global(.backdrop) {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.1);
+}

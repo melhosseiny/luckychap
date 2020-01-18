@@ -1,0 +1,73 @@
+{
+  "name": "luckychap",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "11.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node --experimental-modules app",
+    "watch": "webpack --watch --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js",
+    "image": "npm run imagemin && npm run imagelazy",
+    "imagemin": "node --experimental-modules imagemin",
+    "imagemin-report": "node --experimental-modules imagemin-report",
+    "imagelazy": "node --experimental-modules imagelazy"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melhosseiny/portfolio.git"
+  },
+  "author": "Mostafa Elshamy",
+  "license": "CC BY-NC-ND 4.0",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "@webcomponents/template": "^1.4.0",
+    "body-parser": "^1.18.3",
+    "commonmark": "*",
+    "compression": "^1.7.4",
+    "dialog-polyfill": "^0.5.0",
+    "express": "^4.16.4",
+    "intersection-observer": "^0.6.0",
+    "lit-html": "^1.0.0",
+    "nodemailer": "^6.0.0",
+    "pwa-helpers": "*",
+    "whatwg-fetch": "^3.0.0",
+    "yall-js": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "browserslist": "^4.7.3",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "glob": "^7.1.3",
+    "image-size": "^0.7.3",
+    "imagemin": "^6.1.0",
+    "imagemin-guetzli": "^2.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "imagemin-webp": "^5.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-vibrant": "^3.2.0-alpha",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "raw-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-middleware": "^3.6.1",
+    "webpack-merge": "^4.2.1"
+  }
+}

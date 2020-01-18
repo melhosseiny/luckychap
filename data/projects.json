@@ -1,0 +1,57 @@
+[
+  {
+    "id": "itonya",
+    "title": "I, Tonya",
+    "year": "2017",
+    "type": "film"
+  },
+  {
+    "id": "promisingyoungwoman",
+    "title": "Promising Young Woman",
+    "year": "2020",
+    "type": "film"
+  },
+  {
+    "id": "birdsofprey",
+    "title": "Birds of Prey",
+    "year": "2020",
+    "type": "film"
+  },
+  {
+    "id": "terminal",
+    "title": "Terminal",
+    "year": "2018",
+    "type": "film"
+  },
+  {
+    "id": "dollface",
+    "title": "Dollface",
+    "year": "2018",
+    "type": "tv"
+  },
+  {
+    "id": "bombshell",
+    "title": "Bombshell",
+    "year": "2019",
+    "type": "film"
+  },
+  {
+    "id": "maid",
+    "title": "Maid",
+    "author": "Stephanie Land",
+    "type": "bookclub"
+  },
+  {
+    "id": "aftertheflood",
+    "title": "After the Flood",
+    "author": "Kassandra Montag",
+    "type": "bookclub"
+  },
+  {
+    "id": "myyearofrest",
+    "title": "My Year of Rest and Relaxation",
+    "author": "Ottessa Moshfegh",
+    "type": "bookclub"
+  }
+
+]

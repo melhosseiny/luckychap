@@ -1,0 +1,16 @@
+:global(#toast) {
+  display: none;
+  z-index: 8;
+  font-family: var(--primary-font-family);
+  position: fixed;
+  bottom: 0.5em;
+  left: 0.5em;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+}
+
+:global(#toast.active) {
+  display: flex;
+}

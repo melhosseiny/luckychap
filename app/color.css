@@ -1,0 +1,17 @@
+/*
+  e6077e
+  b18 lapis lazuli 2181b1
+  yr12 loquat fee391
+*/
+:root {
+  --primary-color: rgb(230, 7, 126);
+  --accent-color: rgb(255, 223, 115);
+  --text-decoration-color: #64c5e5;
+  --text-color: rgb(37, 37, 36);
+  --header-text-color: rgb(255, 255, 255);
+
+  --button-bg-color: rgba(0,0,0,0.12);
+
+  --progress-color: rgb(230, 7, 126);
+  --progress-bg-color: rgba(230, 7, 126, 0.2);
+}

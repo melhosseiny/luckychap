@@ -1,0 +1,296 @@
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    /*flex-direction: row;*/
+  }
+}
+
+header {
+  height: 25vh;
+  color: var(--header-text-color);
+  font-weight: 700;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  padding: 0 1em 1em 1em;
+  /* border-bottom: 1px solid rgba(0,0,0,0.2); */
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  & :global(.overlay) {
+    display: none;
+  }
+
+  &[data-cover="img"], &[data-cover="video"] {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+
+    & :global(.overlay) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: color-mod(rgb(0,0,0) a(0.4));
+      mix-blend-mode: multiply;
+    }
+
+    & :global(.toolbar) {
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      right: 1rem;
+    }
+
+    & :global(.title) {
+      z-index: 10;
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+    }
+
+    & :global(.more-indicator) {
+      z-index: 10;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+
+  & video, &[data-cover="video"] {
+    height: 100vh;
+  }
+
+  & img, &[data-cover="img"] {
+    height: 50vh;
+  }
+
+  & img, & video {
+    object-fit: cover;
+  }
+}
+
+:global(.toolbar) {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 60em) {
+  header {
+    /*flex-basis: 38.2%;
+    border-bottom: 0;
+    border-right: 1px solid rgba(0,0,0,0.2);*/
+  }
+}
+
+header h1, header h2 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+header :global(.brand) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /*margin-top: 1em;
+  margin-bottom: 1em;*/
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+header img:global(.profile) {
+  display: block;
+  /* width: 45px; */
+  height: 24px;
+  margin-right: 1em;
+  filter: drop-shadow(0 0 25px var(--primary-color));
+}
+
+header :global(.actions) {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+header :global(.actions) button, header :global(.actions a.btn) {
+  margin-bottom: 0.5em;
+
+  @media screen and (max-width: 30em) {
+    display: none;
+  }
+}
+
+header :global(.actions button.hamburger), header :global(.actions a.hamburger.btn) {
+  @media screen and (min-width: 30em) {
+    display: none;
+  }
+
+  @media screen and (max-width: 30em) {
+    display: block;
+  }
+}
+
+:global(.license) {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  z-index: 4;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  padding: 2em 1em 1em 1em;
+  box-sizing: border-box;
+  min-width: 0; /* to contain pre */
+  min-height: 1px;
+}
+
+main > article {
+  min-height: 1px; /* IE image resize bug */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: var(--accent-color);
+  padding: 1em;
+  & nav {
+    display: flex;
+    flex-direction: row;
+  }
+  & section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-right: 2em;
+  }
+  & :global(.brand) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    & p {
+      margin-bottom: 0;
+    }
+    & img {
+      filter: grayscale(100%);
+      height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 30em) {
+  footer :global(.brand) {
+    flex-direction: column-reverse;
+    align-items: start;
+    & p {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+/* dirty flex */
+:global(.row.ignore-breakpoint) {
+  max-width: 38em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+:global(.ignore-breakpoint .flex-child) {
+  box-sizing: border-box;
+  margin-right: 1em;
+  width: calc(50% - 0.5em)
+}
+
+:global(.ignore-breakpoint .flex-child-two-third) {
+  width: calc(66.66% - 1em);
+}
+
+:global(.ignore-breakpoint .flex-child-third) {
+  width: calc(33.33% - 1em);
+}
+
+:global(.ignore-breakpoint .flex-child):last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 30em) {
+  :global(.flex) {
+    display: flex;
+  }
+
+  :global(.row) {
+    max-width: 38em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  :global(.flex-wrap) {
+    flex-wrap: wrap;
+  }
+
+  :global(.flex-child) {
+    box-sizing: border-box;
+    margin-right: 1em;
+    width: calc(50% - 0.5em);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+
+
+  :global(.flex-child-two-third) {
+    width: calc(66.66% - 1em);
+  }
+
+  :global(.flex-child-third) {
+    width: calc(33.33% - 1em);
+  }
+
+  :global(.flex-child):last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  :global(.hide-lg) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  :global(.hide-sm) {
+    display: none;
+  }
+}
