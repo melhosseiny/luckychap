@@ -46,7 +46,9 @@ const loadPage = function(page) {
         document.querySelector('#header').dataset.cover = "video";
       }
       //progress.display();
-      let filteredProjects = page === 'index' ? projects : projects.filter(project => project.type === page);
+      let filteredProjects = page === 'index' ?
+        projects.filter(project => project.type !== 'bookclub')
+        : projects.filter(project => project.type === page);
       filteredProjects = filteredProjects.sort((a, b) => b.year - a.year);
       if (page === 'index') {
         render(tmplHeader({clickableLogo: false, cover: "video", videoSrc: "vid/lc/hero.mp4"}), document.querySelector('#header'));

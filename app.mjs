@@ -11,7 +11,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const toEmail = process.env.TO_EMAIL;
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 
 
 let app = express();
