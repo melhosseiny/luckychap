@@ -80,6 +80,7 @@ const loadPage = function(page) {
       Project({id: page}).view();
       break;
     default:
+      document.querySelector('#header').dataset.cover = "img";
       let projectData = projects.find(project => project.id === page);
       render(tmplHeader({title: projectData ? projectData.title : toTitleCase(page), id: page, cover: projectData && projectData.type !== 'bookclub' ? "img" : undefined}), document.querySelector('#header'));
       let project = Project({id: page});

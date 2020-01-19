@@ -16,14 +16,14 @@
     "imagelazy": "node --experimental-modules imagelazy"
   },
   "browserslist": [
-    "last 1 version",
-    "> 1%",
+    "> 0.5%",
+    "last 2 versions",
     "maintained node versions",
     "not dead"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/melhosseiny/portfolio.git"
+    "url": "https://github.com/melhosseiny/luckychap.git"
   },
   "author": "Mostafa Elshamy",
   "license": "CC BY-NC-ND 4.0",
