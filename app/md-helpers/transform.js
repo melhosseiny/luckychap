@@ -2,9 +2,10 @@ export function Transform(spec) {
   let lazyLoadImgNode = function(node, lazy, lazyStyles) {
     node._type = 'html_block';
     let matchLazy = lazy.filter(l => l.destination === node.destination)[0];
-    node.literal = "<figure><picture><source data-srcset='" + matchLazy.destination.replace("png", "webp")+ "' type='image/webp'><img class='lazy " + lazyStyles[matchLazy.class] + "' src='" + matchLazy.placeholderGIF + "' data-src='" + matchLazy.destination + "' alt='Ghost released on meta'></picture></figure>"
+    node.literal = "<figure><picture><source data-srcset='" + matchLazy.destination.replace("png", "webp").replace("jpg", "webp") + "' type='image/webp'><img class='lazy " + lazyStyles[matchLazy.class] + "' src='" + matchLazy.placeholderGIF + "' data-src='" + matchLazy.destination + "' alt='Ghost released on meta'></picture></figure>"
     node.destination = null;
     node._parent._type = 'document';
+    console.log(node);
     return node;
   }
 
@@ -25,7 +26,7 @@ export function Transform(spec) {
       let picture = doc.createElement('picture');
       let source = doc.createElement('source');
       source.setAttribute('type','image/webp');
-      source.setAttribute('data-srcset', matchLazy.destination.replace("png","webp"));
+      source.setAttribute('data-srcset', matchLazy.destination.replace("png","webp").replace("jpg","webp"));
       picture.appendChild(source);
       img.parentNode.insertBefore(picture,img);
       picture.appendChild(img);

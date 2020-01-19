@@ -17,8 +17,11 @@
     flex-direction: column;
     align-items: stretch;
 
-    & > a {
+    & > button, & a:global(.btn) {
       margin-bottom: 0.5em;
+      justify-content: start;
+      background-color: rgba(0,0,0,0);
+      color: var(--text-color);
     }
   }
 }

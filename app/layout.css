@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 @media screen and (min-width: 60em) {
@@ -39,6 +40,7 @@ header {
     position: relative;
     padding: 0;
     height: 100vh;
+    height: calc(var(--vh) * 100);
 
     & :global(.overlay) {
       display: block;
@@ -47,6 +49,7 @@ header {
       left: 0;
       width: 100vw;
       height: 100vh;
+      height: calc(var(--vh) * 100);
       background-color: color-mod(rgb(0,0,0) a(0.4));
       mix-blend-mode: multiply;
     }
@@ -76,14 +79,19 @@ header {
 
   & video, &[data-cover="video"] {
     height: 100vh;
+    height: calc(var(--vh) * 100);
   }
 
-  & img, &[data-cover="img"] {
+  & picture, & picture img, &[data-cover="img"] {
     height: 50vh;
   }
 
-  & img, & video {
+  & picture img, & video {
     object-fit: cover;
+  }
+
+  & picture img {
+    width: 100%;
   }
 }
 

@@ -25,7 +25,6 @@ function getPicture(data) {
   const webp = destination.replace('jpg','webp');
   const matchLazy = Lazy.find(l => l.destination === destination);
   const lazyClass = lazyStyles[matchLazy.class];
-  console.log("matchLazy", matchLazy);
   return html`
     <picture>
       <source data-srcset="${webp}" type='image/webp'>

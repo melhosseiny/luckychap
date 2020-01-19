@@ -80,9 +80,8 @@ const loadPage = function(page) {
       Project({id: page}).view();
       break;
     default:
-      document.querySelector('#header').dataset.cover = "img";
       let projectData = projects.find(project => project.id === page);
-      render(tmplHeader({title: projectData ? projectData.title : toTitleCase(page), id: page, cover: projectData ? "img" : undefined}), document.querySelector('#header'));
+      render(tmplHeader({title: projectData ? projectData.title : toTitleCase(page), id: page, cover: projectData && projectData.type !== 'bookclub' ? "img" : undefined}), document.querySelector('#header'));
       let project = Project({id: page});
       project.view();
   }
@@ -135,4 +134,12 @@ document.body.addEventListener("click", (event) => {
   if (sidenav.isActive() && !event.target.closest('#sidenav')) {
     sidenav.hide();
   }
+})
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 })

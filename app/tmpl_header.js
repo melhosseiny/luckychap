@@ -1,5 +1,8 @@
 import {html} from 'lit-html';
 
+import Lazy from './../data/img/lazy.json';
+import lazyStyles from './lazy.css';
+
 export const tmplNav = (data) => html`
   <nav class="actions">
     <a class="btn" href="/film">
@@ -43,7 +46,7 @@ export const tmplHeader = (data) => html`
     ` : html``
   }
   ${ data.cover === "img" ? html`
-    <img src="img/${data.id}/cover.jpg">
+    ${getCoverImg(data)}
   `: html``
   }
   ${ data.title ? html`
@@ -51,6 +54,19 @@ export const tmplHeader = (data) => html`
   `: html``
   }
 `
+
+function getCoverImg(data) {
+  const destination = `img/${data.id}/cover.jpg`;
+  const webp = destination.replace('jpg','webp');
+  const matchLazy = Lazy.find(l => l.destination === destination);
+  const lazyClass = lazyStyles[matchLazy.class];
+  return html`
+    <picture>
+      <source data-srcset="${webp}" type='image/webp'>
+      <img class="lazy ${lazyClass}" src="${matchLazy.placeholderGIF}" data-src="${destination}" alt="${data.title}">
+    </picture>
+  `
+}
 
 function getWebm(videoSrc) {
   return videoSrc.replace('mp4','webm');

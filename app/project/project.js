@@ -56,6 +56,7 @@ export function Project(spec) {
       let markup = writer.render(parsed);
 
       progress.hide();
+      document.querySelector('#header').dataset.cover = "img";
       render(tmpl_title({title: "LuckyChap Entertainment - " + toTitleCase(id)}), document.querySelector("title"));
       render(tmpl({id: id, markup: markup}), document.querySelector('#main'));
     } catch (error) {
