@@ -194,6 +194,9 @@ footer {
     flex-direction: row;
   }
   & section {
+    & > strong {
+      font-weight: 600;
+    }
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
