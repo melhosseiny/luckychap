@@ -65,3 +65,7 @@ dist/*bundle.js
 
 # Thumbnails
 Thumbs.db
+
+# ffmpeg
+ffmpeg.exe
+ffprobe.exe

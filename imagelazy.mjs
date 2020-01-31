@@ -1,6 +1,7 @@
 import Vibrant from 'node-vibrant'
 import glob from 'glob';
 import sizeOf from 'image-size';
+import ffmpeg from 'fluent-ffmpeg';
 
 import fs from 'fs';
 
@@ -64,6 +65,7 @@ let palettes = files.map(async f => {
     destination: f.replace("data/",""),
     width: dimensions.width,
     height: dimensions.height,
+    aspectRatio: dimensions.width / dimensions.height,
     placeholder: placeholder,
     placeholderGIF: placeholderGIF
   })
@@ -84,3 +86,29 @@ async function getImageMetadata () {
 }
 
 getImageMetadata();
+
+let videos = [
+  'dist/vid/lc/hero.mp4',
+  'dist/vid/lc/office.mp4'
+]
+
+ffmpeg.setFfmpegPath('ffmpeg.exe');
+ffmpeg.setFfprobePath('ffprobe.exe');
+
+let getVideoMetadata = async () => {
+  const videoMetadata = await Promise.all(
+    videos.map(video => {
+      return new Promise((resolve, reject) => {
+        ffmpeg.ffprobe(video, (err, metadata) => resolve({
+          destination: video,
+          width: metadata.streams[0].width,
+          height: metadata.streams[0].height,
+          aspectRatio: metadata.streams[0].width / metadata.streams[0].height
+        }));
+      });
+    })
+  )
+  fs.writeFileSync('./data/vid/lazy.json', JSON.stringify(videoMetadata, null, 2) , 'utf-8');
+}
+
+getVideoMetadata();

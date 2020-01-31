@@ -1,0 +1,14 @@
+[
+  {
+    "destination": "dist/vid/lc/hero.mp4",
+    "width": 1856,
+    "height": 774,
+    "aspectRatio": 2.397932816537468
+  },
+  {
+    "destination": "dist/vid/lc/office.mp4",
+    "width": 1920,
+    "height": 1080,
+    "aspectRatio": 1.7777777777777777
+  }
+]

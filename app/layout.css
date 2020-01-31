@@ -82,16 +82,31 @@ header {
     height: calc(var(--vh) * 100);
   }
 
-  & picture, & picture img, &[data-cover="img"] {
+  & picture, &[data-cover="img"] {
     height: 50vh;
   }
 
   & picture img, & video {
     object-fit: cover;
+    height: auto;
+    width: 100%;
+    min-height: 50vh;
+    min-width: calc(var(--aspect-ratio)*50vh);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 
-  & picture img {
-    width: 100%;
+  & picture {
+    position: relative;
+    display: block;
+  }
+
+  & video {
+    min-height: 100vh;
+    min-width: calc(var(--aspect-ratio)*100vh);
   }
 }
 

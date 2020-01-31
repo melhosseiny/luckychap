@@ -1,6 +1,7 @@
 import {html} from 'lit-html';
 
 import Lazy from './../data/img/lazy.json';
+import LazyVideo from './../data/vid/lazy.json';
 import lazyStyles from './lazy.css';
 
 export const tmplNav = (data) => html`
@@ -38,10 +39,7 @@ export const tmplHeader = (data) => html`
     ${tmplNav({hamburger: true})}
   </div>
   ${ data.cover === "video" ? html`
-      <video autoplay muted loop>
-        <source src="${getWebm(data.videoSrc)}" type="video/webm">
-        <source src="${data.videoSrc}" type="video/mp4">
-      </video>
+      ${getCoverVideo(data)}
       <i class="material-icons more-indicator">arrow_downward</i>
     ` : html``
   }
@@ -63,9 +61,23 @@ function getCoverImg(data) {
   return html`
     <picture>
       <source data-srcset="${webp}" type='image/webp'>
-      <img class="lazy ${lazyClass}" src="${matchLazy.placeholderGIF}" data-src="${destination}" alt="${data.title}">
+      <img style="--aspect-ratio: ${matchLazy.aspectRatio}; min-width: ${getMinWidth(matchLazy.aspectRatio, 50)}vh" class="lazy ${lazyClass}" src="${matchLazy.placeholderGIF}" data-src="${destination}" alt="${data.title}">
     </picture>
   `
+}
+
+function getCoverVideo(data) {
+  const matchLazy = LazyVideo.find(l => l.destination.includes(data.videoSrc));
+  return html`
+    <video style="--aspect-ratio: ${matchLazy.aspectRatio}; min-width: ${getMinWidth(matchLazy.aspectRatio, 100)}vh" autoplay muted loop>
+      <source src="${getWebm(data.videoSrc)}" type="video/webm">
+      <source src="${data.videoSrc}" type="video/mp4">
+    </video>
+  `
+}
+
+function getMinWidth(aspectRatio, height) {
+  return aspectRatio * height;
 }
 
 function getWebm(videoSrc) {
