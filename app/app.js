@@ -38,6 +38,16 @@ let progress = Progress({id: "#progress"});
 
 const loadPage = function(page) {
   switch(page) {
+    // redirects
+    case 'maid':
+      window.location.href = 'https://www.amazon.com/Maid-Hard-Work-Mothers-Survive/dp/0316505099/';
+      break;
+    case 'aftertheflood':
+      window.location.href = 'https://www.amazon.com/After-Flood-Novel-Kassandra-Montag/dp/0062889362/';
+      break;
+    case 'myyearofrest':
+      window.location.href = 'https://www.amazon.com/My-Year-Rest-Relaxation-Novel/dp/0525522131/';
+      break;
     case 'index':
     case 'film':
     case 'tv':
