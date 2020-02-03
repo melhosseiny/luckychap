@@ -6,6 +6,7 @@
     "aspectRatio": 0.6583333333333333,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvisGVEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhiwFYAoAAAP///wAAACH5BAEAAAAALAAAAACLAVgCAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 395 600'%3E%3C/svg%3E",
     "color": "#ef94a8",
     "class": "img-aftertheflood-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-aftertheflood-card-jpg { background-color: #ef94a8 }"
@@ -17,6 +18,7 @@
     "aspectRatio": 2.3587223587223587,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvv4NlEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhwAOXAYAAAP///wAAACH5BAEAAAAALAAAAADAA5cBAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 407'%3E%3C/svg%3E",
     "color": "#e2c296",
     "class": "img-birdsofprey-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-birdsofprey-card-jpg { background-color: #e2c296 }"
@@ -28,6 +30,7 @@
     "aspectRatio": 2.3587223587223587,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvf0fLEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAcuA4AAAP///wAAACH5BAEAAAAALAAAAACABy4DAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 814'%3E%3C/svg%3E",
     "color": "#e4c0a2",
     "class": "img-birdsofprey-cover-jpg",
     "style": "img:global(:not(.yall-loaded)).img-birdsofprey-cover-jpg { background-color: #e4c0a2 }"
@@ -39,6 +42,7 @@
     "aspectRatio": 0.666,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvmcL5EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhmgLoA4AAAP///wAAACH5BAEAAAAALAAAAACaAugDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 666 1000'%3E%3C/svg%3E",
     "color": "#e2c7ac",
     "class": "img-birdsofprey-poster-jpg",
     "style": "img:global(:not(.yall-loaded)).img-birdsofprey-poster-jpg { background-color: #e2c7ac }"
@@ -50,6 +54,7 @@
     "aspectRatio": 2.388059701492537,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvv0NkEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhwAOSAYAAAP///wAAACH5BAEAAAAALAAAAADAA5IBAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 402'%3E%3C/svg%3E",
     "color": "#edd1ae",
     "class": "img-bombshell-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-bombshell-card-jpg { background-color: #edd1ae }"
@@ -61,6 +66,7 @@
     "aspectRatio": 2.388059701492537,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvf8fIEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAckA4AAAP///wAAACH5BAEAAAAALAAAAACAByQDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 804'%3E%3C/svg%3E",
     "color": "#77cde2",
     "class": "img-bombshell-cover-jpg",
     "style": "img:global(:not(.yall-loaded)).img-bombshell-cover-jpg { background-color: #77cde2 }"
@@ -72,6 +78,7 @@
     "aspectRatio": 0.648,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvh8L5EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhiALoA4AAAP///wAAACH5BAEAAAAALAAAAACIAugDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 648 1000'%3E%3C/svg%3E",
     "color": "#e3d085",
     "class": "img-bombshell-poster-jpg",
     "style": "img:global(:not(.yall-loaded)).img-bombshell-poster-jpg { background-color: #e3d085 }"
@@ -83,6 +90,7 @@
     "aspectRatio": 2,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvv8N3EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhwAPgAYAAAP///wAAACH5BAEAAAAALAAAAADAA+ABAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 480'%3E%3C/svg%3E",
     "color": "#d5c49e",
     "class": "img-dollface-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-dollface-card-jpg { background-color: #d5c49e }"
@@ -94,6 +102,7 @@
     "aspectRatio": 2.006269592476489,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvfwfvEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAe9A4AAAP///wAAACH5BAEAAAAALAAAAACAB70DAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 957'%3E%3C/svg%3E",
     "color": "#e8ba91",
     "class": "img-dollface-cover-jpg",
     "style": "img:global(:not(.yall-loaded)).img-dollface-cover-jpg { background-color: #e8ba91 }"
@@ -105,6 +114,7 @@
     "aspectRatio": 0.659,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvksL5EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhkwLoA4AAAP///wAAACH5BAEAAAAALAAAAACTAugDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 659 1000'%3E%3C/svg%3E",
     "color": "#e8c8a3",
     "class": "img-dollface-poster-jpg",
     "style": "img:global(:not(.yall-loaded)).img-dollface-poster-jpg { background-color: #e8c8a3 }"
@@ -116,6 +126,7 @@
     "aspectRatio": 1.741654571843251,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvrwSsEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhsASxAoAAAP///wAAACH5BAEAAAAALAAAAACwBLECAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 689'%3E%3C/svg%3E",
     "color": "#e1c2a3",
     "class": "img-itonya-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-itonya-card-jpg { background-color: #e1c2a3 }"
@@ -127,6 +138,7 @@
     "aspectRatio": 2.376237623762376,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvf8fJEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAcoA4AAAP///wAAACH5BAEAAAAALAAAAACABygDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 808'%3E%3C/svg%3E",
     "color": "#72c3bb",
     "class": "img-itonya-cover-jpg",
     "style": "img:global(:not(.yall-loaded)).img-itonya-cover-jpg { background-color: #72c3bb }"
@@ -138,6 +150,7 @@
     "aspectRatio": 0.674,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvocL5EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhogLoA4AAAP///wAAACH5BAEAAAAALAAAAACiAugDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 674 1000'%3E%3C/svg%3E",
     "color": "#d7a880",
     "class": "img-itonya-poster-jpg",
     "style": "img:global(:not(.yall-loaded)).img-itonya-poster-jpg { background-color: #d7a880 }"
@@ -149,6 +162,7 @@
     "aspectRatio": 3.0737704918032787,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAv7cI8EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlh7gL0AIAAAP///wAAACH5BAEAAAAALAAAAADuAvQAAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 244'%3E%3C/svg%3E",
     "color": "#ec74a7",
     "class": "img-lc-logo-neon-png",
     "style": "img:global(:not(.yall-loaded)).img-lc-logo-neon-png { background-color: #ec74a7 }"
@@ -160,6 +174,7 @@
     "aspectRatio": 4.587155963302752,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvwwmIEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhxAkhAoAAAP///wAAACH5BAEAAAAALAAAAADECSECAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2500 545'%3E%3C/svg%3E",
     "color": "#fc7cc1",
     "class": "img-lc-logo-png",
     "style": "img:global(:not(.yall-loaded)).img-lc-logo-png { background-color: #fc7cc1 }"
@@ -171,6 +186,7 @@
     "aspectRatio": 1.7777777777777777,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAv/8lnEQcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhAAqgBYAAAP///wAAACH5BAEAAAAALAAAAAAACqAFAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2560 1440'%3E%3C/svg%3E",
     "color": "#f0ecbd",
     "class": "img-lc-team-jpg",
     "style": "img:global(:not(.yall-loaded)).img-lc-team-jpg { background-color: #f0ecbd }"
@@ -182,6 +198,7 @@
     "aspectRatio": 0.6666666666666666,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvj8GVEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhkAFYAoAAAP///wAAACH5BAEAAAAALAAAAACQAVgCAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3C/svg%3E",
     "color": "#f5ebc0",
     "class": "img-maid-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-maid-card-jpg { background-color: #f5ebc0 }"
@@ -193,6 +210,7 @@
     "aspectRatio": 0.645,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvgsGVEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgwFYAoAAAP///wAAACH5BAEAAAAALAAAAACDAVgCAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 387 600'%3E%3C/svg%3E",
     "color": "#e5769c",
     "class": "img-myyearofrest-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-myyearofrest-card-jpg { background-color: #e5769c }"
@@ -204,6 +222,7 @@
     "aspectRatio": 2.388059701492537,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvf8fIEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAckA4AAAP///wAAACH5BAEAAAAALAAAAACAByQDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 804'%3E%3C/svg%3E",
     "color": "#dd9ab1",
     "class": "img-promisingyoungwoman-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-promisingyoungwoman-card-jpg { background-color: #dd9ab1 }"
@@ -215,6 +234,7 @@
     "aspectRatio": 2.388059701492537,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvf8fIEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAckA4AAAP///wAAACH5BAEAAAAALAAAAACAByQDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 804'%3E%3C/svg%3E",
     "color": "#dcaaa6",
     "class": "img-promisingyoungwoman-cover-jpg",
     "style": "img:global(:not(.yall-loaded)).img-promisingyoungwoman-cover-jpg { background-color: #dcaaa6 }"
@@ -226,6 +246,7 @@
     "aspectRatio": 0.675,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvosL5EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhowLoA4AAAP///wAAACH5BAEAAAAALAAAAACjAugDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 675 1000'%3E%3C/svg%3E",
     "color": "#eccc71",
     "class": "img-promisingyoungwoman-poster-jpg",
     "style": "img:global(:not(.yall-loaded)).img-promisingyoungwoman-poster-jpg { background-color: #eccc71 }"
@@ -237,6 +258,7 @@
     "aspectRatio": 2.406015037593985,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvv4NjEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhwAOPAYAAAP///wAAACH5BAEAAAAALAAAAADAA48BAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 399'%3E%3C/svg%3E",
     "color": "#f5cfa7",
     "class": "img-terminal-card-jpg",
     "style": "img:global(:not(.yall-loaded)).img-terminal-card-jpg { background-color: #f5cfa7 }"
@@ -248,6 +270,7 @@
     "aspectRatio": 2.421185372005044,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvfwfGEAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhgAcZA4AAAP///wAAACH5BAEAAAAALAAAAACABxkDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 793'%3E%3C/svg%3E",
     "color": "#89f0d0",
     "class": "img-terminal-cover-jpg",
     "style": "img:global(:not(.yall-loaded)).img-terminal-cover-jpg { background-color: #89f0d0 }"
@@ -259,6 +282,7 @@
     "aspectRatio": 0.675,
     "placeholder": "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvosL5EAcQERGIiP4HAA==",
     "placeholderGIF": "data:image/gif;base64,R0lGODlhowLoA4AAAP///wAAACH5BAEAAAAALAAAAACjAugDAAIAADs=",
+    "placeholderSVG": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 675 1000'%3E%3C/svg%3E",
     "color": "#bef0ef",
     "class": "img-terminal-poster-jpg",
     "style": "img:global(:not(.yall-loaded)).img-terminal-poster-jpg { background-color: #bef0ef }"

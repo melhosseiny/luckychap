@@ -28,7 +28,7 @@ function getPicture(data) {
   return html`
     <picture>
       <source data-srcset="${webp}" type='image/webp'>
-      <img style="--aspect-ratio: ${matchLazy.aspectRatio}; min-width: ${getMinWidth(matchLazy.aspectRatio, 200)}px" class="lazy ${lazyClass}" src="${matchLazy.placeholderGIF}" data-src="${destination}" alt="${data.title}">
+      <img style="--aspect-ratio: ${matchLazy.aspectRatio}; min-width: ${getMinWidth(matchLazy.aspectRatio, 200)}px" class="lazy ${lazyClass}" src="${matchLazy.placeholderSVG}" data-src="${destination}" alt="${data.title}">
     </picture>
   `
 }

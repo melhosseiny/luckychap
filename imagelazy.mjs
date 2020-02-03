@@ -37,6 +37,10 @@ let getPlaceholderGIF = function(width,height) {
   return 'data:image/gif;base64,' + Buffer.concat(gif).toString('base64');
 }
 
+let getPlaceholderSVG = function(width, height) {
+  return "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 " + width + " " + height + "'%3E%3C/svg%3E";
+}
+
 let getPlaceholder = function(width,height) {
   let binWidth = (width-1).toString(2).padStart(14,"0");
   let binHeight = (height-1).toString(2).padStart(14,"0");
@@ -59,6 +63,7 @@ let palettes = files.map(async f => {
   let placeholder = getPlaceholder(dimensions.width, dimensions.height);
   // transparent gif placeholder 1px*1px
   let placeholderGIF = getPlaceholderGIF(dimensions.width, dimensions.height);
+  let placeholderSVG = getPlaceholderSVG(dimensions.width, dimensions.height);
   let palette = Vibrant.from(f, {}).getPalette().catch(err => console.log(err));
 
   imageMetadata.push({
@@ -67,7 +72,8 @@ let palettes = files.map(async f => {
     height: dimensions.height,
     aspectRatio: dimensions.width / dimensions.height,
     placeholder: placeholder,
-    placeholderGIF: placeholderGIF
+    placeholderGIF: placeholderGIF,
+    placeholderSVG: placeholderSVG
   })
   return palette;
 })

@@ -2,7 +2,7 @@ export function Transform(spec) {
   let lazyLoadImgNode = function(node, lazy, lazyStyles) {
     node._type = 'html_block';
     let matchLazy = lazy.filter(l => l.destination === node.destination)[0];
-    node.literal = "<figure><picture><source data-srcset='" + matchLazy.destination.replace("png", "webp").replace("jpg", "webp") + "' type='image/webp'><img class='lazy " + lazyStyles[matchLazy.class] + "' src='" + matchLazy.placeholderGIF + "' data-src='" + matchLazy.destination + "' alt='Ghost released on meta'></picture></figure>"
+    node.literal = "<figure><picture><source data-srcset='" + matchLazy.destination.replace("png", "webp").replace("jpg", "webp") + "' type='image/webp'><img class='lazy " + lazyStyles[matchLazy.class] + "' src='" + matchLazy.placeholderSVG + "' data-src='" + matchLazy.destination + "' alt='Ghost released on meta'></picture></figure>"
     node.destination = null;
     node._parent._type = 'document';
     console.log(node);
@@ -19,7 +19,7 @@ export function Transform(spec) {
       let matchLazy = lazy.filter(l => l.destination === relPath)[0];
       //console.log(matchLazy);
       img.setAttribute('data-src', matchLazy.destination);
-      img.setAttribute('src', matchLazy.placeholderGIF);
+      img.setAttribute('src', matchLazy.placeholderSVG);
       img.classList.add('lazy');
       img.classList.add(lazyStyles[matchLazy.class]);
 
