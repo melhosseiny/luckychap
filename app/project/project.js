@@ -1,6 +1,6 @@
 import {render} from 'lit-html';
 
-import commonmark from 'commonmark';
+import { Parser, HtmlRenderer } from 'commonmark';
 import {Transform} from './../md-helpers/transform'
 
 import {tmpl} from './tmpl.js';
@@ -13,8 +13,8 @@ import lazyStyles from './../lazy.css';
 
 import {Progress} from './../ui/progress/progress';
 
-let reader = new commonmark.Parser();
-let writer = new commonmark.HtmlRenderer();
+let reader = new Parser();
+let writer = new HtmlRenderer();
 let transform = Transform();
 
 let progress = Progress({id: "#progress"});

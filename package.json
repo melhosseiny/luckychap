@@ -3,17 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "11.x"
+    "node": "20.x"
   },
+  "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node --experimental-modules app",
+    "start": "node app",
     "watch": "webpack --watch --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
     "image": "npm run imagemin && npm run imagelazy",
-    "imagemin": "node --experimental-modules imagemin",
-    "imagemin-report": "node --experimental-modules imagemin-report",
-    "imagelazy": "node --experimental-modules imagelazy"
+    "imagemin": "node imagemin",
+    "imagemin-report": "node imagemin-report",
+    "imagelazy": "node imagelazy"
   },
   "browserslist": [
     "> 0.5%",
