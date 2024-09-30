@@ -1,6 +1,7 @@
 const merge = require('webpack-merge');
-const common = require('./webpack.config.js');
+const common = require('./webpack.config.cjs');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
@@ -11,6 +12,10 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      filename: 'index.html'
     })
   ],
   optimization: {

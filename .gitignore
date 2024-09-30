@@ -69,3 +69,5 @@ Thumbs.db
 # ffmpeg
 ffmpeg.exe
 ffprobe.exe
+
+.DS_Store
